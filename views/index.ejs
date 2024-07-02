@@ -1,0 +1,14 @@
+<h1>ini adalah halaman Home</h1>
+<h3>nama saya <%= nama %> </h3>
+
+<h4>Daftar Mahasiswa</h4>
+<% if (mahasiswa.length < 1) { %>
+    <p>Data masih kosong</p>
+<% } else {
+mahasiswa.forEach(mhs => { %>
+    <ul>
+        <li>Nama : <%= mhs.nama %></li>
+        <li>Email : <%= mhs.email %></li>
+        <li>NIM : <%= mhs.NIM %></li>
+    </ul>
+<% })} %>
